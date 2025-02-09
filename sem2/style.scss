@@ -1,0 +1,145 @@
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.item {
+    &__box {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.top {
+    overflow: hidden;
+}
+
+#check {
+    position: absolute;
+    left: -99999px;
+    visibility: hidden;
+}
+
+#check:checked ~ .menu {
+    right: -232px;
+}
+
+header {
+    position: relative;
+    height: 75px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 232px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right 1s;
+    //height: 634px;
+    background: #FFF;
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    &__heading {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 4px;
+    }
+    &__subheading {
+        color: #F16D7F;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    &__link {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover {
+            color: #F16D7F;
+        }
+    }
+}
+
+.promo {
+    height: 764px;
+    background-color: #F1E4E6;
+}
+
+.sort {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        &__text {
+            color: #6F6E6E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__size {
+            position: absolute;
+            left: -9px;
+            top: 22px;
+            width: 79px;
+            height: 103px;
+            flex-shrink: 0;
+            background: #FFF;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+}
+
+.details {
+    position: relative;
+}
