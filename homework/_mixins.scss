@@ -1,0 +1,17 @@
+@mixin containerCatalogEl() {
+    position: relative;
+    width: 360px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    fill-opacity: "0.7";
+}
+
+@mixin containerCatalogElBig() {
+    position: relative;
+    width: 1140px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    fill-opacity: "0.7";
+}
