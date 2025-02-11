@@ -110,19 +110,32 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+.catalog_nav_box:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.catalog_nav_box:last-of-type .catalog_nav_link {
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.catalog_nav_links {
+  display: flex;
+}
 .catalog_nav_link {
   text-decoration: none;
   color: #636363;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-}
-.catalog_nav_link_active {
-  color: #F16D7F;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
   line-height: normal;
 }
 

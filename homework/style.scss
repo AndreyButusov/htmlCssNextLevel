@@ -119,6 +119,29 @@ a {
         line-height: normal;
     }
 
+    &_box:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    &_box:last-of-type .catalog_nav_link{
+        color: $colorSelectSite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &_links {
+        display: flex;
+    }
+
     &_link {
         text-decoration: none;
         color: #636363;
@@ -126,13 +149,7 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        &_active {
-            color: $colorSelectSite;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
+        
     }
 }
 
