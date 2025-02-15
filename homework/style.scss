@@ -153,6 +153,199 @@ a {
     }
 }
 
+.cart_list {
+    padding-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    
+    &_itemblock {
+        width: 652px;
+
+    }
+
+    &_infoblock {
+        width: 360px;
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+    }
+
+    &_items {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &_item {
+        position: relative;
+        height: 306px;
+        box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 32px;
+
+        &_img {
+            width: 262px;
+            height: 306px;
+        }
+
+        &_content {
+            
+            padding-top: 22px;
+        }
+
+        &_heading {
+            width: 202px;
+            margin-bottom: 42px;
+            color: #222;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_text {
+            margin-bottom: 6px;
+            color: #575757;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &_pink {
+                color: $colorSelectSite;
+            }
+        }
+
+        &_input {
+            margin-left: 24px;
+            width: 44px;
+            height: 25px;
+            text-align: center;
+            border: 1px solid #EAEAEA;
+        }
+
+        &_delete {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            border: none;
+            background-color: #fff;
+        }
+    }
+
+    &_buttons {
+        margin-top: 72px;
+        margin-bottom: 128px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_button {
+        width: 235px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #A4A4A4;;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_shipadress {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &_title {
+            width: 136px;
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_input {
+            width: 360px;
+            height: 45px;
+            padding-left: 17px;
+            background-color: #fff;
+            border: 1px solid #A4A4A4;
+            color: #222;
+        }
+
+        &_button {
+            width: 101px;
+            height: 35px;  
+            margin-top: 3px; 
+            background-color: #fff;
+            border: 1px solid #A4A4A4;;
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &_total {
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+        padding: 43px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        &_info {
+            height: 61px;
+            border-bottom: 1px solid #E2E2E2;
+        }
+
+        &_text1 {
+            text-align: right;
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_text2 {
+            text-align: right;
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &_pink {
+                color: $colorSelectSite;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        &_button {
+            width: 273px;
+            height: 50px;
+            background-color: $colorSelectSite;
+            border: none;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
 .filter-sort {
     height: 132px;
     position: relative;
@@ -692,14 +885,13 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 650px;
 
-    &__text {
+    &_text {
         width: 332px;
         color: #FBFBFB;
-        font-family: Lato;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
