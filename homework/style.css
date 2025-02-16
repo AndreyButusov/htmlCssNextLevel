@@ -209,6 +209,10 @@ a {
   border: none;
   background-color: #fff;
 }
+.cart_list_item_delete:hover path {
+  transition-duration: 200ms;
+  fill: red;
+}
 .cart_list_buttons {
   margin-top: 72px;
   margin-bottom: 128px;
@@ -225,6 +229,10 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.cart_list_button:hover {
+  transition-duration: 300ms;
+  background-color: #F16D7F;
 }
 .cart_list_shipadress {
   display: flex;
@@ -258,6 +266,10 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.cart_list_shipadress_button:hover {
+  transition-duration: 300ms;
+  background-color: #F16D7F;
 }
 .cart_list_total {
   width: 360px;
@@ -305,6 +317,10 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.cart_list_total_button:hover {
+  transition-duration: 300ms;
+  color: #000;
 }
 
 .filter-sort {

@@ -234,6 +234,11 @@ a {
             border: none;
             background-color: #fff;
         }
+
+        &_delete:hover path{
+            transition-duration: 200ms;
+            fill: red;
+        }
     }
 
     &_buttons {
@@ -253,6 +258,11 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    }
+
+    &_button:hover {
+        transition-duration: 300ms;
+        background-color: $colorSelectSite;
     }
 
     &_shipadress {
@@ -289,6 +299,11 @@ a {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+        }
+
+        &_button:hover {
+            transition-duration: 300ms;
+            background-color: $colorSelectSite;
         }
     }
 
@@ -342,6 +357,11 @@ a {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+        }
+
+        &_button:hover {
+            transition-duration: 300ms;
+            color: #000;
         }
     }
 }
