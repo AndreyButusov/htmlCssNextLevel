@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header center">
+        <div class="header__img_left">
+            <a href="index.html"><img class="header_top_logo " src="img/Group2.svg" alt="Лого"></a>
+            <div>
+                <img class="header_top_img" src="img/Forma1.svg" alt="Поиск">
+            </div>   
+        </div>
+        <div class="header__img_right">
+            <div class="menu_burger">
+                <input type="checkbox"id="check" checked="false">
+                <label for="check">            <img class="header_top_img" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/burger.svg" alt="Меню">
+                </label>
+                <div class="menu">
+                    <h2 class="menu__heading">MENU</h2>
+                    <h3 class="menu__subheading">MAN</h3>
+                    <ul class="menu__ul">
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Bags</a></li>
+                        <li><a class="menu__link" href="#">Denim</a></li>
+                        <li><a class="menu__link" href="#">T-Shirts</a></li>
+                    </ul>
+                    <h3 class="menu__subheading">WOMAN</h3>
+                    <ul class="menu__ul">
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Jackets&Coats</a></li>
+                        <li><a class="menu__link" href="#">Polos</a></li>
+                        <li><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li><a class="menu__link" href="#">Shirts</a></li>
+                    </ul>
+                    <h3 class="menu__subheading">KIDS</h3>
+                    <ul class="menu__ul">
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Jackets&Coats</a></li>
+                        <li><a class="menu__link" href="#">Polos</a></li>
+                        <li><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li><a class="menu__link" href="#">Shirts</a></li>
+                        <li><a class="menu__link" href="#">Bags</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="header_top_img profile" href="registr.html"><img  src="img/Profile.svg" alt="Профиль"></a>
+            
+            <div class="cart-icon">
+                <a href="cart.html"><img class="header_top_img hidemobile" src="img/Buy.svg" alt="Корзина"></a>
+                <div>
+                        <img class="cart-icon__image" src="img/cart_icon_pink.svg" alt="">
+                        <p class="cart-icon__text">5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumbs center ">
+        <h2 class="breadcrumbs__title reg-mobile">REGISTRATION</h2>
+    </div>
+    <div class="registr-block center">
+        <div class="form">
+            <p class="form__subtitle">Your Name</p>
+            <input class="form__input" type="text" id="" placeholder="First Name">
+            <input class="form__input" type="text" id="" placeholder="Last Name">
+            <div class="form__radioblock">
+                    <input class="form__radio" type="radio" name="gender" id=""><label class="form__radio-label" for="radio">Male</label>
+                    <input class="form__radio" type="radio" name="gender" id=""><label class="form__radio-label" for="radio">Female</label>
+            </div>
+            <p class="form__subtitle">Login details</p>
+            <input class="form__input" type="email" name="" id="" placeholder="Email">
+            <input class="form__input" type="password" name="" id="" placeholder="Password">
+            <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <button class="form__button">JOIN NOW<span style="margin-left: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" fill="white"/>
+                </svg></span></button>
+        </div>
+        <div class="offer">
+            <div >
+                <h2 class="offer__title">LOYALTY HAS ITS PERKS</h2>
+            </div>
+            <div>
+                <p class="offer__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            </div>
+            <div class="offer__ul">
+                <li class="offer__li">15% off welcome offer</li>
+                <li class="offer__li">Free shipping, returns and exchanges on all orders</li>
+                <li class="offer__li">$10 off a purchase on your birthday</li>
+                <li class="offer__li">Early access to products</li>
+                <li class="offer__li">Exclusive offers & rewards</li>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <section class="footer_level2">
+            <article class="footer_level2_block">
+                <img src="img/Foto.svg" alt="foto">
+                <p class="footer_feedback">
+                    <span class="footer_feedback_text_A">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,</span>
+                    <span class="footer_feedback_text_B">a pulvinar purus condimentum“</span>
+                    </p>
+            </article>
+            <article class="footer_level2_block">
+                <p style="text-align: center">
+                    <span class="footer_level2_block_text_A">SUBSCRIBE</span> <br>
+                    <span class="footer_level2_block_text_B">FOR OUR NEWLETTER AND PROMOTION</span>
+                </p>
+                <section class="footer_level2_input_email">
+                    <div class="footer_level2_input">
+                        <svg class="footer_level2_input1" xmlns="http://www.w3.org/2000/svg" width="256" height="49" viewBox="0 0 256 49" fill="none">
+                            <path d="M256 0H17.6287C7.89266 0 0 10.969 0 24.5C0 38.031 7.89266 49 17.6287 49H256V24.5V0Z" fill="#E1E1E1"/>
+                            </svg>
+                        <input class="footer_level2_input_pole" type="email" value="Enter Your Email">
+                    </div>
+                    <div class="footer_level2_button">
+                        <svg class="footer_level2_button_background" xmlns="http://www.w3.org/2000/svg" width="100" height="49" viewBox="0 0 100 49" fill="none">
+                            <path d="M0 0H77.8846C83.75 0 89.3751 2.58127 93.5225 7.17591C97.67 11.7706 100 18.0022 100 24.5C100 30.9978 97.67 37.2294 93.5225 41.8241C89.3751 46.4187 83.75 49 77.8846 49H0V0Z" fill="#F16D7F"/>
+                            </svg>
+                        <button class="footer_level2_button_text">Subscribe</button>
+                    </div>
+                </section>
+            </article>
+        </section>
+        <section class="footer_level3 center">
+            <p class="footer_level3_text">© 2022  Brand  All Rights Reserved.</p>
+            <section class="footer_level3_logo_block">
+                <div class="footer_level3_logo_block_logo">
+                    <img class="background_logo" src="img/Rectangle.svg" alt="logo">
+                    <img class="logo" src="img/pinterest_logo.svg" alt="logo_pr">
+                </div>
+                <div class="footer_level3_logo_block_logo">
+                    <img class="background_logo" src="img/Rectangle.svg" alt="logo">
+                    <img class="logo" src="img/twitter_logo.svg" alt="logo_tw">
+                </div>
+            </section>
+        </section>
+    </footer>

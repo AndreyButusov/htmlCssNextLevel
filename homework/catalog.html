@@ -13,11 +13,13 @@
 </head>
 <body>
     <div class="header center">
-        <div class="header_img_left">
-            <img class="header_top_logo " src="img/Group2.svg" alt="Лого">
-            <img class="header_top_img" src="img/Forma1.svg" alt="Поиск">
+        <div class="header__img_left">
+            <a href="index.html"><img class="header_top_logo " src="img/Group2.svg" alt="Лого"></a>
+            <div>
+                <img class="header_top_img" src="img/Forma1.svg" alt="Поиск">
+            </div>   
         </div>
-        <div class="header_img_right">
+        <div class="header__img_right">
             <div class="menu_burger">
                 <input type="checkbox"id="check" checked="false">
                 <label for="check">            <img class="header_top_img" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/burger.svg" alt="Меню">
@@ -50,16 +52,23 @@
                     </ul>
                 </div>
             </div>
-            <img class="header_top_img hidemobile" src="img/Profile.svg" alt="Профиль">
-            <img class="header_top_img hidemobile" src="img/Buy.svg" alt="Корзина">
+            <a class="header_top_img profile" href="registr.html"><img  src="img/Profile.svg" alt="Профиль"></a>
+            
+            <div class="cart-icon">
+                <a href="cart.html"><img class="header_top_img hidemobile" src="img/Buy.svg" alt="Корзина"></a>
+                <div>
+                        <img class="cart-icon__image" src="img/cart_icon_pink.svg" alt="">
+                        <p class="cart-icon__text">5</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="catalog_nav center">
-        <h2 class="catalog_nav_title">NEW ARRIVALS</h2>
-        <div class="catalog_nav_links">
-            <div class="catalog_nav_box"><a class="catalog_nav_link" href="#" class="catalog_link">HOME</a></div>
-            <div class="catalog_nav_box"><a class="catalog_nav_link" href="#" class="catalog_link">MAN</a></div>
-            <div class="catalog_nav_box"><a class="catalog_nav_link" href="#" class="catalog_link">NEW ARRIVALS</a></div>
+    <div class="breadcrumbs center">
+        <h2 class="breadcrumbs__title">NEW ARRIVALS</h2>
+        <div class="breadcrumbs__links">
+            <div class="breadcrumbs__box"><a class="breadcrumbs__link" href="#" class="catalog__link">HOME</a></div>
+            <div class="breadcrumbs__box"><a class="breadcrumbs__link" href="#" class="catalog__link">MAN</a></div>
+            <div class="breadcrumbs__box"><a class="breadcrumbs__link" href="#" class="catalog__link">NEW ARRIVALS</a></div>
             
             
             
@@ -68,7 +77,7 @@
     <div class="filter-sort center">
         <div class="filt">
             <details class="filter">
-                <summary class="filter__summary"><span class="filter__heading">FILTER </span><svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <summary class="filter__summary"><span class="filter__heading">FILTER </span><svg class="filter__summary_svg" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
                     </svg>                
                 </summary>
@@ -165,7 +174,7 @@
             
         </div>
     </div>
-    <div class="showcase">
+    <div class="showcase center">
         <div class="showcase_item center">
             <div class="item1">
                 <img src="img/showcase/1.svg" alt="preview">
@@ -175,11 +184,9 @@
                     <p class="showcase_price">$52.00</p>
                 </div>
             </div>
-            <div class="showcase_item2">
-                <div>
-                    <img class="showcase_item2_img" src="img/showcase/2.svg" alt="preview">
-                </div>
-                <div class="showcase_item2_text">
+            <div class="item2">
+                <img width="360px" height="420px" src="img/showcase/2.svg" alt="preview">
+                <div class="showcase_item_text">
                     <h2 class="showcase_product_name">ELLERY X M'O CAPSULE</h2>
                     <p class="showcase_descriprion">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="showcase_price">$52.00</p>
@@ -242,6 +249,24 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="pagination center">  
+        <ul class="pagination__page">
+            <li class="pagination__page_btn"><span class="material-icons"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path d="M7.99512 2L2.99512 7L7.99512 12L6.99512 14L-0.00488281 7L6.99512 0L7.99512 2Z" fill="black"/>
+                </svg></span></li>
+            <li class="pagination__page_numbers">1</li>
+            <li class="pagination__page_numbers">2</li>
+            <li class="pagination__page_numbers">3</li>
+            <li class="pagination__page_numbers">4</li>
+            <li class="pagination__page_numbers">5</li>
+            <li class="pagination__page_numbers">6</li>
+            <li class="pagination__page_dots">...</li>
+            <li class="pagination__page_numbers"> 20</li>
+            <li class="pagination__page_btn"><span class="material-icons"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z" fill="black"/>
+                </svg></span></li>
+        </ul>
     </div>
     <footer>
         <section class="footer_level1">

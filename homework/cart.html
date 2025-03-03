@@ -13,11 +13,13 @@
 </head>
 <body>
     <div class="header center">
-        <div class="header_img_left">
-            <img class="header_top_logo " src="img/Group2.svg" alt="Лого">
-            <img class="header_top_img" src="img/Forma1.svg" alt="Поиск">
+        <div class="header__img_left">
+            <a href="index.html"><img class="header_top_logo " src="img/Group2.svg" alt="Лого"></a>
+            <div>
+                <img class="header_top_img" src="img/Forma1.svg" alt="Поиск">
+            </div>   
         </div>
-        <div class="header_img_right">
+        <div class="header__img_right">
             <div class="menu_burger">
                 <input type="checkbox"id="check" checked="false">
                 <label for="check">            <img class="header_top_img" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/burger.svg" alt="Меню">
@@ -50,70 +52,77 @@
                     </ul>
                 </div>
             </div>
-            <img class="header_top_img hidemobile" src="img/Profile.svg" alt="Профиль">
-            <img class="header_top_img hidemobile" src="img/Buy.svg" alt="Корзина">
+            <a class="header_top_img profile" href="registr.html"><img  src="img/Profile.svg" alt="Профиль"></a>
+            
+            <div class="cart-icon">
+                <a href="cart.html"><img class="header_top_img hidemobile" src="img/Buy.svg" alt="Корзина"></a>
+                <div>
+                        <img class="cart-icon__image" src="img/cart_icon_pink.svg" alt="">
+                        <p class="cart-icon__text">5</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="catalog_nav center">
-        <h2 class="catalog_nav_title">SHOPPING CART</h2>
+    <div class="breadcrumbs center">
+        <h2 class="breadcrumbs__title cart-mobile">SHOPPING CART</h2>
     </div>
-    <div class="cart_list center">
-        <div class="cart_list_itemblock">
-            <div class="cart_list_items">
-                <div class="cart_list_item">
-                    <div class="cart_list_item_img">
+    <div class="cart center">
+        <div class="cart__itemblock">
+            <div class="cart__items">
+                <div class="cart__item">
+                    <div class="cart__item_img">
                         <img src="img/showcase/3.svg" alt="photo_3">
                     </div>
-                    <div class="cart_list_item_content">
-                        <h2 class="cart_list_item_heading">MANGO  PEOPLE  T-SHIRT</h2>
-                        <p class="cart_list_item_text">Price: <span class="cart_list_item_text_pink">$300</span> 	</p>
-                        <p class="cart_list_item_text">Color: Red</p>
-                        <p class="cart_list_item_text">Size: Xl	</p>
-                        <p class="cart_list_item_text">Quantity:	<input class="cart_list_item_input" type="text" value="2"></p>
-                        <button class="cart_list_item_delete">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <div class="cart__item__content">
+                        <h2 class="cart__item_heading">MANGO  PEOPLE  T-SHIRT</h2>
+                        <p class="cart__item_text">Price: <span class="cart__item_text_pink">$300</span> 	</p>
+                        <p class="cart__item_text">Color: Red</p>
+                        <p class="cart__item_text">Size: Xl	</p>
+                        <p class="cart__item_text">Quantity:	<input class="cart__item_input" type="text" value="2"></p>
+                        <button class="cart__item_delete">
+                            <svg class="cart__item_delete_mobile" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757"/>
                                 </svg>
                         </button>
                     </div>
                 </div>
-                <div class="cart_list_item">
-                    <div class="cart_list_item_img" >
-                        <img height="306px" src="img/showcase/2.svg" alt="photo_2">
+                <div class="cart__item">
+                    <div class="cart__item_img" >
+                        <img height="306px" class="cart__item_img_mobile" src="img/showcase/2.svg" alt="photo_2">
                     </div>
-                    <div class="cart_list_item_content">
-                        <h2 class="cart_list_item_heading">MANGO  PEOPLE  T-SHIRT</h2>
-                        <p class="cart_list_item_text">Price: <span class="cart_list_item_text_pink">$300</span> 	</p>
-                        <p class="cart_list_item_text">Color: Red</p>
-                        <p class="cart_list_item_text">Size: Xl	</p>
-                        <p class="cart_list_item_text">Quantity:	<input class="cart_list_item_input" type="text" value="2"></p>
-                        <button class="cart_list_item_delete">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <div class="cart__item__content">
+                        <h2 class="cart__item_heading">MANGO  PEOPLE  T-SHIRT</h2>
+                        <p class="cart__item_text">Price: <span class="cart__item_text_pink">$300</span> 	</p>
+                        <p class="cart__item_text">Color: Red</p>
+                        <p class="cart__item_text">Size: Xl	</p>
+                        <p class="cart__item_text">Quantity:	<input class="cart__item_input" type="text" value="2"></p>
+                        <button class="cart__item_delete">
+                            <svg class="cart__item_delete_mobile" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757"/>
                                 </svg>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="cart_list_buttons">
-                <button class="cart_list_button">CLEAR SHOPPING CART</button>
-                <button class="cart_list_button">CONTINUE SHOPPING</button>
+            <div class="cart__buttons">
+                <button class="cart__button">CLEAR SHOPPING CART</button>
+                <button class="cart__button">CONTINUE SHOPPING</button>
             </div>
         </div>
-        <div class="cart_list_infoblock">
-            <div class="cart_list_shipadress">
-                <h2 class="cart_list_shipadress_title">SHIPPING ADRESS</h2>
-                <input class="cart_list_shipadress_input" type="text" value="Bangladesh" class="cart_list_shipadress_input">
-                <input class="cart_list_shipadress_input" type="text" value="State" class="cart_list_shipadress_input">
-                <input class="cart_list_shipadress_input" type="text" value="Postcode / Zip" class="cart_list_shipadress_input">
-                <button class="cart_list_shipadress_button">GET A QUOTE</button>
+        <div class="cart__infoblock">
+            <div class="cart__shipadress">
+                <h2 class="cart__shipadress_title">SHIPPING ADRESS</h2>
+                <input class="cart__shipadress_input" type="text" value="Bangladesh" class="cart__shipadress_input">
+                <input class="cart__shipadress_input" type="text" value="State" class="cart__shipadress_input">
+                <input class="cart__shipadress_input" type="text" value="Postcode / Zip" class="cart__shipadress_input">
+                <button class="cart__shipadress__button">GET A QUOTE</button>
             </div>
-            <div class="cart_list_total">
-                <div class="cart_list_total_info">
-                    <p class="cart_list_total_text1">SUB TOTAL         $900</p>
-                    <p class="cart_list_total_text2">GRAND TOTAL      <span class="cart_list_total_text2_pink">$900</span></p>
+            <div class="cart__total">
+                <div class="cart__total__info">
+                    <p class="cart__total__text1">SUB TOTAL         $900</p>
+                    <p class="cart__total__text2">GRAND TOTAL      <span class="cart__total__text2__pink">$900</span></p>
                 </div>
-                <button class="cart_list_total_button">PROCEED TO CHECKOUT</button>
+                <button class="cart__total__button">PROCEED TO CHECKOUT</button>
             </div>
         </div>
     </div>
