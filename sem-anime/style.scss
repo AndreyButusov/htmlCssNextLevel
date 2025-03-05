@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes lamp-click {
+    0% {
+        fill: transparent;
+    }
+    50% {
+        fill: yellow;
+    }
+    100% {
+        fill: transparent;
+    }
+}
+
+html {
+    counter-reset: light;   
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-image: url(img/planet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 35px;
+    position: absolute;
+
+    &__check {
+        position: absolute;
+        visibility: hidden;
+        left: -9999999px;
+        &:checked {
+            counter-increment: light;  
+        }
+        &:checked ~ label {
+            display: none;  
+        }
+    }
+}
+
+.box1 {
+    left: random(90) + vw;
+    top: random(90) + vh;
+    animation: lamp-click 3s linear 0s both;
+}
+
+.box2 {
+    left: random(90) + vw;
+    top: random(90) + vh;
+    animation: lamp-click 3s linear 1s both;
+}
+
+.box3 {
+    left: random(90) + vw;
+    top: random(90) + vh;
+    animation: lamp-click 3s linear 2s both;
+}
+
+.count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    &::after {
+        content: counter(light);
+    }
+}
+

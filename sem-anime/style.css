@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes lamp-click {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+html {
+  counter-reset: light;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(img/planet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 35px;
+  position: absolute;
+}
+.box__check {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999px;
+}
+.box__check:checked {
+  counter-increment: light;
+}
+.box__check:checked ~ label {
+  display: none;
+}
+
+.box1 {
+  left: 23vw;
+  top: 11vh;
+  animation: lamp-click 3s linear 0s both;
+}
+
+.box2 {
+  left: 76vw;
+  top: 59vh;
+  animation: lamp-click 3s linear 1s both;
+}
+
+.box3 {
+  left: 23vw;
+  top: 54vh;
+  animation: lamp-click 3s linear 2s both;
+}
+
+.count {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+}
+.count::after {
+  content: counter(light);
+}/*# sourceMappingURL=style.css.map */
