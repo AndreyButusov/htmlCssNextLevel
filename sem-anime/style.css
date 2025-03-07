@@ -43,20 +43,20 @@ body {
 }
 
 .box1 {
-  left: 30vw;
-  top: 42vh;
+  left: 64vw;
+  top: 63vh;
   animation: lamp-click 3s linear 0s both;
 }
 
 .box2 {
-  left: 65vw;
-  top: 13vh;
+  left: 34vw;
+  top: 18vh;
   animation: lamp-click 3s linear 1s both;
 }
 
 .box3 {
-  left: 21vw;
-  top: 66vh;
+  left: 36vw;
+  top: 27vh;
   animation: lamp-click 3s linear 2s both;
 }
 
